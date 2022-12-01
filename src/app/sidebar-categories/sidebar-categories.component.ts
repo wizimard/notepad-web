@@ -7,6 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarCategoriesComponent implements OnInit {
 
+  categories = [
+    { name: 'Coding', notes: [] },
+    {
+      name: 'Tasks', notes: [
+        {
+          id: '1',
+          name: 'Task 0'
+        },
+        {
+          id: '2',
+          name: 'Task 1'
+        },
+        {
+          id: '3',
+          name: 'Task 2'
+        },
+      ]
+    },
+    { name: 'School', notes: [] }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

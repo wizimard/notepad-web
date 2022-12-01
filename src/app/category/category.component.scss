@@ -1,0 +1,49 @@
+:host {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.category {
+  width: 100%;
+
+  & button {
+    width: 100%;
+    height: 36px;
+    padding: 0 5px 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    &:hover,
+    &:focus {
+      background-color: #484848;
+    }
+  }
+  & img {
+    flex-shrink: 1;
+  }
+  & span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &__notes {
+    margin: 3px 5px 7px 22.5px;
+
+    border-left: 1px solid #3471ff;
+    & button {
+      height: 20px;
+
+      gap: 8px;
+    }
+    & span {
+      font-size: 13px;
+      line-height: 20px;
+      color: #afafaf;
+    }
+  }
+}

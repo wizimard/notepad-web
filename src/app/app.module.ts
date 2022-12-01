@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { SidebarSearchComponent } from './sidebar-search/sidebar-search.component';
 import { SidebarCategoriesComponent } from './sidebar-categories/sidebar-categories.component';
 import { ContentComponent } from './content/content.component';
+import { CategoryComponent } from './category/category.component';
+import { MarkdownViewComponent } from './markdown-view/markdown-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarSearchComponent,
     SidebarCategoriesComponent,
-    ContentComponent
+    ContentComponent,
+    CategoryComponent,
+    MarkdownViewComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,17 @@
+<li class="category">
+  <button (click)="changeViewMode()">
+    <img
+      [attr.src]="'assets/img/' + (isOpen ? 'folder_open' : 'folder') + '.svg'"
+      alt="folder"
+    />
+    <span>{{ category.name }}</span>
+  </button>
+  <ul *ngIf="isOpen" class="category__notes">
+    <li *ngFor="let note of category.notes">
+      <button>
+        <img src="/assets/img/file.svg" alt="file" />
+        <span>{{ note.name }}</span>
+      </button>
+    </li>
+  </ul>
+</li>

@@ -4,3 +4,73 @@
 
   background-color: #1b1b1b;
 }
+.content {
+  width: 70%;
+  height: 100%;
+  padding: 87px 0 15px 6.5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &__title {
+    padding-bottom: 3px;
+
+    color: #c8c8c8;
+
+    font-size: 50px;
+    line-height: 75px;
+  }
+  &__info {
+    width: 100%;
+    padding-bottom: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  &__category,
+  &__time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+
+    & span {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  &__tags {
+    width: 100%;
+    padding: 9px 0 22px 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5.57px;
+    flex-wrap: wrap;
+
+    border-top: 1px solid #2d2d2d;
+
+    & a {
+      color: #898989;
+
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 16px;
+
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+    }
+  }
+}

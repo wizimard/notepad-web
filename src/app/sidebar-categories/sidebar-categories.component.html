@@ -1,1 +1,9 @@
-<p>sidebar-categories works!</p>
+<div class="sidebar-category">
+  <h3 class="sidebar-category__title">Categories</h3>
+  <ul class="categories">
+    <app-category
+      *ngFor="let category of categories"
+      [category]="category"
+    ></app-category>
+  </ul>
+</div>
